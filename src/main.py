@@ -23,7 +23,7 @@ from src.dataloader import DyckCorpus, Sampler, CounterCorpus
 from src.model import LanguageModel, build_model, train_model, run_validation, run_test
 from src.utils.dyck_generator import DyckLanguage
 
-
+from torch import nn
 global log_folder
 global model_folder
 global result_folder

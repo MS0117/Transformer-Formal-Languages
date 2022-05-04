@@ -51,7 +51,7 @@ def build_parser():
 
 	# LSTM parameters
 	parser.add_argument('-emb_size', type=int, default=64, help='Embedding dimensions of inputs')
-	parser.add_argument('-model_type', type=str, default='SAN', choices= ['RNN', 'SAN','SAN-Rel', 'Mogrify', 'SARNN', 'SAN-Simple'],  help='Model Type: RNN or Transformer or Mogrifier or SARNN')
+	parser.add_argument('-model_type', type=str, default='SAN', choices= ['RNN', 'SAN','SAN-Rel', 'Mogrify', 'SARNN', 'SAN-Simple','CAPE-SAN'],  help='Model Type: RNN or Transformer or Mogrifier or SARNN')
 	parser.add_argument('-cell_type', type=str, default='LSTM', choices= ['LSTM', 'GRU', 'RNN'],  help='RNN cell type, default: lstm')
 	# parser.add_argument('-use_attn', action='store_true', help='To use attention mechanism?')
 	# parser.add_argument('-attn_type', type=str, default='general', help='Attention mechanism: (general, concat), default: general')
